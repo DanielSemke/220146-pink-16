@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Данил Семке](https://up.htmlacademy.ru/adaptive/16/user/220146).
-* Наставник: `Неизвестно`.
+* Наставник: Андрей Фидельман.
 
 ---
 
