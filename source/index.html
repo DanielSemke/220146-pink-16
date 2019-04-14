@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <a class="main-nav__logo">Pink</a>
+        <a class="main-nav__logo-link"><span class="main-nav__logo">PINK</span></a>
         <button class="main-nav__toggle" type="button">Закрыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -31,25 +31,25 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">"Pink"-приложение, которое изменить вашу жизнь</h1>
-      <img class="page-main__hand-image" src="http://placehold.it/150x100" width="150" height="100" alt="">
+      <img class="page-main__hand-image" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="">
       <section class="pictures">
         <div class="pictures__wrapper">
           <h2 class="pictures__slogan">Взгляните на жизнь иначе!</h2>
           <button class="pictures__download-button">Скачать приложение</button>
           <ul class="pictures__apps apps-list">
-            <li class="apps-list__item">
+            <li>
               <a href="#">
-                <img src="http://placehold.it/150x100" width="150" height="100" alt="Apple">Apple
+                <span class="apps-list__item apps-list__item--apple">Apple</span>
               </a>
             </li>
-            <li class="apps-list__item">
+            <li>
               <a href="#">
-                <img src="http://placehold.it/150x100" width="150" height="100" alt="Android">Android
+                <span class="apps-list__item apps-list__item--android">Android</span>
               </a>
             </li>
-            <li class="apps-list__item">
+            <li>
               <a href="#">
-                <img src="http://placehold.it/150x100" width="150" height="100" alt="windows">Windows
+                <span class="apps-list__item apps-list__item--microsoft">Windows</span>
               </a>
             </li>
           </ul>
@@ -64,7 +64,7 @@
           <h3 class="question-title__item--bottom">Нам есть, что вам предложить!</h3>
         </div>
       </div>
-      <section class="offers"
+      <section class="offers">
         <ul class="offers__list">
           <li class="offers__item">
             <h4 class="offers__title">Поднимает настроение</h4>
@@ -82,12 +82,12 @@
               с друзьями и заводите новых.</p>
           </li>
         </ul>
-        <img class="offers__picture" src="http://placehold.it/150x100" width="150" height="100" alt="">
-      </section
+        <img class="offers__picture" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="">
+      </section>
       <footer class="page-footer">
         <div class="page-footer__wrapper">
           <div class="page-footer__block">
-            <a class="page-footer__logo logo">PINK</a>
+            <a class="page-footer__logo-link"><span class="page-footer__logo">PINK</span></a>
             <ul class="page-footer__social social">
               <li class="social__item"><a class="social__link social__link--twitter" href="#">Твиттер</a></li>
               <li class="social__item"><a class="social__link social__link--facebook" href="#">Фейсбук</a></li>
