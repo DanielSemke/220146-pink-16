@@ -1,3 +1,80 @@
 .pictures {
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  text-align: center;
+}
+
+.pictures__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.pictures__slogan {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pictures__form-title {
+  margin: 0;
+  padding: 0;
+}
+
+.pictures__block {
   background-color: #1d2631;
+  min-height: 270px;
+}
+
+.pictures__apps {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.pictures__text {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .pictures {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.pictures__wrapper--for-tablet {
+  width: 620px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+  .pictures__slogan {
+    display: block;
+}
+
+  .pictures__block {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .pictures__slogan {
+    display: block;
+  }
+
+  .pictures__wrapper--for-desktop{
+    display: flex;
+    justify-content: space-between;
+    width: 970px;
+    margin: 0 auto;
+    outline: 2px solid blue;
+  }
 }

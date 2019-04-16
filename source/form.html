@@ -9,9 +9,11 @@
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <a class="main-nav__logo-link"><span class="main-nav__logo">PINK</span></a>
-        <button class="main-nav__toggle" type="button">Закрыть меню</button>
         <div class="main-nav__wrapper">
+          <div class="main-nav__logo-block">
+            <a class="main-nav__logo-link"><span class="main-nav__logo">PINK</span></a>
+            <button class="main-nav__toggle" type="button">Закрыть меню</button>
+          </div>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a href="index.html">Главная</a>
@@ -20,7 +22,7 @@
               <a href="photo.html">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a>Конкурс</a>
+              <a href="#">Конкурс</a>
             </li>
             <li class="site-list__item">
               <a href="https://htmlacademy.ru/">HTML Academy</a>
@@ -28,14 +30,18 @@
           </ul>
         </div>
       </nav>
-      <h2 class="page-header__form-title">Курс на самое безбашенное путешествие с Пинк</h2>
     </header>
+    <section class="pictures">
+      <div class="pictures__wrapper">
+        <h2 class="pictures__form-title">Курс на самое безбашенное путешествие с Пинк</h2>
+      </div>
+    </section>
 
-      <main class="page-main">
+    <main class="page-main">
       <footer class="page-footer">
         <div class="page-footer__wrapper">
           <div class="page-footer__block">
-            <a class="page-footer__logo">PINK</a>
+            <a class="page-footer__logo-link"><span class="page-footer__logo">PINK</span></a>
             <ul class="page-footer__social social">
               <li class="social__item"><a class="social__link social__link--twitter" href="#">Твиттер</a></li>
               <li class="social__item"><a class="social__link social__link--facebook" href="#">Фейсбук</a></li>

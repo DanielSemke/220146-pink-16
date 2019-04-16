@@ -1,0 +1,48 @@
+.page-footer__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.social,
+.copyright {
+  display: flex;
+}
+
+.page-footer__social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.copyright {
+  justify-content: space-between;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .page-footer__block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    outline: 2px solid red;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__wrapper {
+    width: 950px;
+    margin: 0 auto;
+  }
+
+  .page-footer__block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 200px; /*Временно*/
+  }
+}
