@@ -25,21 +25,21 @@
     display: none;
   }
 
-@media (min-width: @tablet-width) {
-  &__wrapper {
-    width: 620px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row-reverse;
+  @media (min-width: @tablet-width) {
+    &__wrapper {
+      width: 620px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    &__title,
+    &__text {
+      text-align: left;
+    }
   }
 
-  &__title,
-  &__text {
-    text-align: left;
-  }
-}
-
-@media (min-width: @desktop-width) {
+  @media (min-width: @desktop-width) {
     &__wrapper {
       width: 940px;
       margin: 0 auto;
