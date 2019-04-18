@@ -1,16 +1,23 @@
 .page-main {
-  display: flex;
-  flex-direction: column;
-}
+    display: flex;
+    flex-direction: column;
 
-.page-main__hand-image {
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
-  display: block;
-  margin: auto;
-}
+    &__hand-image {
+    background-image: none;
+    display: block;
+    margin: auto;
+  }
 
-@media (min-width: @desktop-width) {
-  .page-main__hand-image {
-    margin: 0;
+  @media (min-width: @tablet-width) {
+    &__hand-image {
+      background-image: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &__hand-image {
+      margin: 0;
+      background-image: none;
+    }
   }
 }
