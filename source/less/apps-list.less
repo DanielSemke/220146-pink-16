@@ -1,22 +1,20 @@
 .apps-list {
-  background-color: #1d2631;
-}
+  &__item {
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 60px;
+    display: block;
+  }
 
-.apps-list__item {
-  background-repeat: no-repeat;
-  width: 50px;
-  height: 60px;
-  display: block;
-}
+  &__item--apple {
+    background-image: url("../img/logo-apple.svg");
+  }
 
-.apps-list__item--apple {
-  background-image: url("../../img/logo-apple.svg");
-}
+  &__item--android {
+    background-image: url("../img/logo-android.svg");
+  }
 
-.apps-list__item--android {
-  background-image: url("../../img/logo-android.svg");
-}
-
-.apps-list__item--microsoft {
-  background-image: url("../../img/logo-microsoft.svg");
+  &__item--microsoft {
+    background-image: url("../img/logo-microsoft.svg");
+  }
 }

@@ -1,0 +1,24 @@
+.question {
+  min-height: 250px; /*Временно*/
+  background-color: #ffffff;
+
+  &__wrapper {
+    width: 210px;
+    margin: 0 auto;
+    outline: 2px solid red;
+  }
+
+  @media (min-width: @tablet-width) {
+    &__wrapper {
+      width: 620px;
+      margin: 0 auto;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &__wrapper {
+      width: 830px;
+      margin: 0 auto;
+    }
+  }
+}

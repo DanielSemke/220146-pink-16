@@ -1,0 +1,52 @@
+.photos {
+  &__wrapper {
+    width: 280px;
+    margin: 0 auto;
+    outline: 2px solid blue;
+  }
+
+  &__head-picture {
+    text-align: center;
+    outline: 2px solid red;
+  }
+
+  &__title-wrapper {
+    margin: 0 auto;
+    width: 245px;
+    outline: 2px solid black;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    height: 240px; /*Временно*/
+    outline: 2px solid green;
+    text-align: center;
+  }
+
+  @media (min-width: @tablet-width) {
+    &__wrapper {
+      width: 620px;
+      margin: 0 auto;
+    }
+
+    &__title-wrapper {
+      margin: 0 auto;
+      width: 450px;
+      outline: 2px solid black;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &__wrapper {
+      width: 940px;
+      margin: 0 auto;
+    }
+
+    &__title-wrapper {
+      margin: 0 auto;
+      width: 570px;
+      outline: 2px solid black;
+    }
+  }
+}

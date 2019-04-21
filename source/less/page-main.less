@@ -1,3 +1,23 @@
-.page-main__hand-image {
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
+.page-main {
+  display: flex;
+  flex-direction: column;
+
+  &__hand-image {
+    background-image: none;
+    display: block;
+    margin: auto;
+  }
+
+  @media (min-width: @tablet-width) {
+    &__hand-image {
+      background-image: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &__hand-image {
+      margin: 0;
+      background-image: none;
+    }
+  }
 }
