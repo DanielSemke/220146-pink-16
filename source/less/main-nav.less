@@ -1,16 +1,18 @@
 .main-nav {
   background-color: #1c2530;
   color: #ffffff;
+  position: relative;
 
   &__wrapper {
     width: 280px;
     margin: 0 auto;
   }
 
-  &__logo {
+  &__logo-link {
     background-image: url("../img/logo-pink-white-mobile.svg");
     background-repeat: no-repeat;
     width: 80px;
+    height: 25px;
     display: block;
   }
 
@@ -27,12 +29,6 @@
     padding: 0;
     list-style: none;
     outline: 2px solid red;
-  }
-
-  &__list a {
-    display: block;
-    text-align: center;
-    outline: 1px solid red;
   }
 
   @media (min-width: @tablet-width) {
