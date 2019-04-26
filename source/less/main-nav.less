@@ -1,17 +1,23 @@
 .main-nav {
-  background-color: #1c2530;
+
+  background-color: #293646;
   color: #ffffff;
 
-  &__wrapper {
-    width: 280px;
-    margin: 0 auto;
+  &__logo-link {
+    margin-top: 20px;
+    margin-bottom: 23px;
+    margin-left: 20px;
   }
 
-  &__logo {
-    background-image: url("../img/logo-pink-white-mobile.svg");
+  &__toggle {
+    background-color: #ffffff;
+    border: none;
+    background-image: url("../img/icon-no.svg");
     background-repeat: no-repeat;
-    width: 80px;
-    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    margin-top: 20px;
   }
 
   &__block {
@@ -26,23 +32,29 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    outline: 2px solid red;
-  }
-
-  &__list a {
-    display: block;
-    text-align: center;
-    outline: 1px solid red;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 32px;
   }
 
   @media (min-width: @tablet-width) {
-    &__wrapper {
-      width: 620px;
-      margin: 0 auto;
+
+    margin-bottom: 70px;
+
+    &__logo-link {
+      position: relative;
+      margin-top: 43px;
+      margin-bottom: 42px;
+      margin-left: 85px;
     }
   }
 
   @media (min-width: @desktop-width) {
+
+    margin: 0;
+    margin-bottom: 65px;
+    background-color: rgba(15, 17, 24, 0.5);
+
     &__wrapper {
       width: 940px;
       margin: 0 auto;
@@ -54,6 +66,9 @@
     &__list {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
+      outline: 5px solid red;
+      font-weight: normal;
     }
 
     &__toggle {

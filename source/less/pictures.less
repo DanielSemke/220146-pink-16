@@ -1,11 +1,12 @@
 .pictures {
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
+
   background-position: center 0;
   background-size: cover;
   display: flex;
   flex-direction: column;
   color: #ffffff;
   text-align: center;
+  outline: 1px solid red;
 
   &__wrapper {
     display: flex;
@@ -20,6 +21,32 @@
     padding: 0;
   }
 
+  &__download-button {
+    font-size: 18px;
+    line-height: 18px;
+    background: transparent;
+    color: #ffffff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 29px;
+    margin-bottom: 32px;
+    border-radius: 245px;
+    border: 2px solid;
+    cursor: pointer;
+  }
+
+  &__hand-image {
+    display: block;
+    outline: 1px solid red;
+    background-image: url("../../img/iphone-hand-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: center 0;
+    width: 265px;
+    height: 285px;
+    margin-top: 110px;
+
+  }
+
   &__form-title {
     margin: 0;
     padding: 0;
@@ -27,21 +54,41 @@
 
   &__block {
     background-color: #1d2631;
-    min-height: 270px;
+
   }
 
   &__apps {
     display: flex;
     justify-content: space-around;
+    align-items: flex-end;
     margin: 0;
     padding: 0;
     list-style: none;
-    text-align: center;
+    min-width: 240px;
+    margin-bottom: 20px;
   }
 
   &__text {
+    font-size: 14px;
+    line-height: 24px;
     margin: 0;
     padding: 0;
+    margin-bottom: 30px;
+  }
+
+
+  &__image-block {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+/* Photo.html */
+  &__form-title {
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 35px;
+    margin-bottom: 85px;
+    line-height: 25px;
   }
 }
 
@@ -49,6 +96,10 @@
   .pictures {
     display: flex;
     flex-direction: row-reverse;
+
+    background-position: center 0;
+    background-size: cover;
+    margin-bottom: 0;
 
     &__container {
       width: 620px;
@@ -59,30 +110,72 @@
 
     &__slogan {
       display: block;
+      margin-top: 90px;
+      margin-bottom: 4px;
+      font-size: 34px;
+      text-align: center;
+      line-height: 48px;
+      font-weight: normal;
+      letter-spacing: 2px;
+    }
+
+    &__wrapper {
+      width: 300px;
     }
 
     &__block {
       background-color: transparent;
     }
-  }
-}
 
-@media (min-width: @tablet-width) {
-  .pictures {
-    background-image: url("../../img/bg-back-tablet@1x.jpg");
-    background-position: center 0;
-    background-size: cover;
+    &__download-button {
+      margin-bottom: 45px;
+    }
+
+    &__apps {
+      margin-bottom: 35px;
+    }
+
+    &__text {
+      font-size: 17px;
+    }
+
+    &__hand-image {
+      display: block;
+      outline: 1px solid red;
+      background-image: url("../../img/iphone-hand-tablet@1x.png");
+      background-repeat: no-repeat;
+      background-position: center 0;
+      width: 645px;
+      height: 545px;
+      margin-left: -311px;
+      margin-top: 70px;
+    }
+
+    &__wrapper {
+      min-width: 350px;
+      margin: 0 auto;
+    }
+
+    &__form-title {
+      font-size: 50px;
+      line-height: 60px;
+      font-weight: normal;
+      text-align: center;
+      outline: 1px solid red;
+      padding: 0;
+      margin: 0;
+      padding-bottom: 140px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .pictures {
-    background-image: url("../../img/bg-back-desktop@1x.jpg");
-    background-position: center 0;
-    background-size: cover;
 
     &__slogan {
       display: block;
+      margin-top: 106px;
+      margin-bottom: 25px;
     }
 
     &__container {
@@ -91,6 +184,37 @@
       width: 940px;
       margin: 0 auto;
       outline: 2px solid blue;
+    }
+
+    &__slogan {
+      font-size: 44px;
+      line-height: 60px;
+    }
+
+    &__download-button {
+      margin-bottom: 68px;
+    }
+
+    &__apps {
+      margin-bottom: 53px;
+    }
+
+    &__hand-image {
+      display: block;
+      outline: 1px solid red;
+      background-image: url("../../img/iphone-hand-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-position: center 0;
+      width: 790px;
+      height: 645px;
+      margin-left: -310px;
+      margin-top: 100px;
+    }
+
+    &__form-title {
+      margin: 0;
+      padding: 0;
+      padding-bottom: 100px;
     }
   }
 }
