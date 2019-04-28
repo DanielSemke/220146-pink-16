@@ -1,10 +1,12 @@
 .pictures {
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-position: center 0;
   background-size: cover;
   display: flex;
   flex-direction: column;
   color: #ffffff;
   outline: 1px solid red;
+  min-height: 170px;
 
   &__wrapper {
     display: flex;
@@ -62,7 +64,6 @@
   &__text {
     font-size: 14px;
     line-height: 24px;
-    margin: 0;
     padding: 0;
     margin-bottom: 30px;
   }
@@ -74,28 +75,28 @@
 
   &__form-title {
     display: block;
-    width: 185px;
-    margin: 0;
-    padding: 0;
-    outline: 2px solid red;
+    outline: 4px solid red;
     font-size: 24px;
     font-weight: normal;
     margin-top: 35px;
-    margin-bottom: 85px;
     line-height: 25px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  &__title {
+    width: 300px;
   }
 }
 
 
 @media (min-width: @tablet-width) {
   .pictures {
-
-    background-position: center 0;
-    background-size: cover;
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
     padding-bottom: 0;
+    min-height: 330px;
+
 
     &__container {
       width: 620px;
@@ -117,12 +118,14 @@
     }
 
     &__wrapper {
-      width: 300px;
+      width: 320px;
+      padding: 0 10px;
       outline: 1px solid yellow;
     }
 
     &__block {
       background-color: transparent;
+      margin-right: -10px;
     }
 
     &__download-button {
@@ -130,7 +133,8 @@
     }
 
     &__apps {
-      margin-bottom: 35px;
+      margin-bottom: 2
+      15px;
     }
 
     &__text {
@@ -138,11 +142,7 @@
     }
 
     &__hand-image {
-      display: block;
-      outline: 1px solid red;
       background-image: url("../../img/iphone-hand-tablet@1x.png");
-      background-repeat: no-repeat;
-      background-position: center 0;
       width: 645px;
       height: 545px;
       margin-left: -311px;
@@ -150,23 +150,27 @@
     }
 
     &__form-title {
-      width: 360px;
-      text-align: center;
       font-size: 50px;
       line-height: 60px;
       font-weight: normal;
       outline: 1px solid red;
       padding-top: 35px;
-      padding-bottom: 55px;
+      padding-bottom: 5px;
+    }
+
+    &__title {
+      min-width: 600px;
     }
   }
 }
 
 @media (min-width: @desktop-width) {
   .pictures {
+    background-image: url("../../img/bg-back-desktop@1x.jpg");background-image: url("../../img/bg-back-desktop@1x.jpg");
+    min-height: 395px;
     &__slogan {
       display: block;
-      margin-top: 106px;
+      margin-top: 216px;
       margin-bottom: 25px;
       font-size: 44px;
       line-height: 60px;
@@ -185,25 +189,23 @@
     }
 
     &__apps {
-      margin-bottom: 53px;
+      margin-bottom: 33px;
     }
 
     &__hand-image {
-      display: block;
-      outline: 1px solid red;
       background-image: url("../../img/iphone-hand-desktop@1x.png");
-      background-repeat: no-repeat;
-      background-position: center 0;
       width: 790px;
       height: 645px;
-      margin-left: -310px;
-      margin-top: 100px;
+      margin-left: -327px;
+      margin-top: 209px;
     }
 
     &__form-title {
-      padding-top: 30px;
-      width: 354px;
-      padding-bottom: 15px;
+      padding-top: 135px;
+    }
+
+    &__title {
+      width: 780px;
     }
   }
 }
