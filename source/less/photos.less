@@ -5,11 +5,6 @@
     outline: 2px solid blue;
   }
 
-  &__head-picture {
-    text-align: center;
-    outline: 2px solid red;
-  }
-
   &__title-wrapper {
     margin: 0 auto;
     width: 245px;
@@ -17,11 +12,126 @@
   }
 
   &__title {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: normal;
     margin: 0;
     padding: 0;
-    height: 240px; /*Временно*/
     outline: 2px solid green;
     text-align: center;
+    margin-top: 45px;
+    margin-bottom: 50px;
+  }
+
+  &__head-picture {
+    text-align: center;
+    outline: 2px solid red;
+    background-color: #ffffff;
+    width: 100%;
+    height: 136px;
+    background-image: url("../../img/panorama-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__head-picture-title {
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #d22856;
+    margin-left: 138px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item,
+  &__item-panorama {
+    background-color: #f2f2f2;
+    margin-bottom: 20px;
+  }
+
+  &__user-name {
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #283645;
+    margin: 0;
+    padding: 0;
+    padding-top: 18px;
+    padding-left: 18px;
+  }
+
+  &__text-time {
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #283645;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #283645;
+    margin: 0;
+    padding: 0;
+    padding-left: 18px;
+    margin-bottom: 10px;
+  }
+
+  &__like-block {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 125px;
+    margin-left: 18px;
+    padding-bottom: 20px;
+    outline: 1px solid black;
+  }
+
+  &__like {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    outline: 1px solid red;
+    font-size: 12px;
+    line-height: 24px;
+    color: #d22856;
+  }
+
+  &__button-heart {
+    width: 18px;
+    height: 15px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    background-image: url("../../img/icon-heart-red.svg");
+    background-repeat: no-repeat;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+
+  &__picture {
+    max-height: 180px;
   }
 
   @media (min-width: @tablet-width) {
@@ -35,6 +145,46 @@
       width: 450px;
       outline: 2px solid black;
     }
+
+    &__title {
+      font-size: 18px;
+      line-height: 30px;
+      color: #283645;
+      margin: 0;
+      margin-top: 90px;
+      margin-bottom: 80px;
+    }
+
+    &__head-picture {
+      display: block;
+      height: 510px;
+      background-image: url("../../img/panorama-tablet@1x.jpg");
+    }
+
+    &__head-picture-title {
+      margin-left: 482px;
+      margin-top: 54px;
+    }
+
+    &__flexblock {
+      display: flex;
+      outline: 1px solid red;
+    }
+
+    &__item {
+      width: 300px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__text {
+      padding: 0;
+      padding-left: 30px;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -45,8 +195,27 @@
 
     &__title-wrapper {
       margin: 0 auto;
-      width: 570px;
-      outline: 2px solid black;
+      width: 640px;
+    }
+
+    &__title {
+      margin-bottom: 89px;
+    }
+
+    &__head-picture {
+      display: block;
+      height: 510px;
+      background-image: url("../../img/panorama-desktop@1x.jpg");
+    }
+
+    &__head-picture-title {
+      margin-left: 802px;
+      margin-top: 54px;
+    }
+
+    &__item-panorama {
+      width: 100%;
+      outline: 1px solid red;
     }
   }
 }
